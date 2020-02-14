@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "css": "node-sass public/scss/main.scss public/css/main.css --output-style compressed",
-    "watch:css": "onchange 'public/scss/**/*.scss' -- npm run css"
+    "watch:css": "onchange 'public/scss/**/*.scss' -- npm run css",
+    "build:linux": "node_modules/electron-packager/bin/electron-packager.js . electron-webgl --platform=linux --arch=armv7l"
   },
   "author": "",
   "license": "ISC",
