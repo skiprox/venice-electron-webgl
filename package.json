@@ -1,0 +1,20 @@
+{
+  "name": "electron-webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "css": "node-sass public/scss/main.scss public/css/main.css --output-style compressed",
+    "watch:css": "onchange 'public/scss/**/*.scss' -- npm run css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.0",
+    "electron-packager": "^14.2.1",
+    "glslCanvas": "^0.1.7",
+    "node-sass": "^4.13.1",
+    "onchange": "^6.1.0"
+  }
+}
