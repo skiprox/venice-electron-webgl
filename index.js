@@ -9,15 +9,13 @@ let mainWindow;
 function createWindow () {
 	// Create the browser window.
 	mainWindow = new BrowserWindow({
-		width: 800,
-		height: 600,
 		fullscreen: true,
         webPreferences: {
             nodeIntegration: true
         }
 	});
 
-	mainWindow.setFullScreen(true);
+	// mainWindow.setFullScreen(true);
 
 	// and load the index.html of the app.
 	mainWindow.loadFile('public/index.html');
